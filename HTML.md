@@ -1,4 +1,4 @@
-##你是如何理解 HTML 语义化的
+## 你是如何理解 HTML 语义化的
 
 语义化，指对文本内容的结构化（内容语义化），选择合乎语义的标签（代码语义化），便于开发者阅读，维护和写出更优雅的代码的同时，让浏览器的爬虫和辅助技术更好的解析。
 
@@ -27,7 +27,7 @@ main标签在一份文档中是唯一的，其后代元素常常包括`<article>
 
 页脚，通常包含作者、版权信息或者相关链接等；
 
-##_metaviewport是做什么用的怎么写
+## metaviewport是做什么用的 怎么写
 
 定义和用法
 `<meta>` 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。
@@ -40,6 +40,7 @@ viewport 是针对适配移动端页面的属性
 但在H5移动设备的网站中，都可以看到有那么一大串的meta标签。
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">`
+
 （当设置user-scalable=0之后 可以解决移动端点击300ms延迟问题）
 Viewport ：字面意思为视图窗口，在移动web开发中使用。表示将设备浏览器宽度虚拟成一个特定的值（或计算得出），这样利于移动web站点跨设备显示效果基本一致。移动版的 Safari 浏览器最新引进了 viewport 这个 meta tag，让网页开发者来控制 viewport 的大小和缩放，其他手机浏览器也基本支持。
 
@@ -49,17 +50,17 @@ Viewport ：字面意思为视图窗口，在移动web开发中使用。表示�
 
 Viewport 属性值
 
-width	设置layout viewport 的宽度，为一个正整数，或字符串"width-device"
+- width	设置layout viewport 的宽度，为一个正整数，或字符串"width-device"
 
-initial-scale	设置页面的初始缩放值，为一个数字，可以带小数
+- initial-scale	设置页面的初始缩放值，为一个数字，可以带小数
 
-minimum-scale	允许用户的最小缩放值，为一个数字，可以带小数
+- minimum-scale	允许用户的最小缩放值，为一个数字，可以带小数
 
-maximum-scale	允许用户的最大缩放值，为一个数字，可以带小数
+- maximum-scale	允许用户的最大缩放值，为一个数字，可以带小数
 
-height	设置layout viewport 的高度，这个属性对我们并不重要，很少使用
+- height	设置layout viewport 的高度，这个属性对我们并不重要，很少使用
 
-user-scalable	是否允许用户进行缩放，值为"no"或"yes", no 代表不允许，yes代表允许
+- user-scalable	是否允许用户进行缩放，值为"no"或"yes", no 代表不允许，yes代表允许
 
 常见viewport数值
 
@@ -71,14 +72,16 @@ Android：980
 
 WinPhone：1024
 
-##H5是什么
+## H5是什么
 HTML5 是下一代的 HTML。
 新入坑的前端写的实际上就是html5 没什么好说的
 在移动端开发来说，通常html5就是web开发，外行这么叫。
 http://www.w3school.com.cn/html5/html5_reference.asp
 
-##DOM
+## DOM
 
-必考：事件委托
+事件委托，在父元素上添加点击事件然后通过判断target执行类似的逻辑
+比如li列表的点击事件 性能优化吧
 
-曾考：用 mouse 事件写一个可拖曳的 div
+## 用 mouse 事件写一个可拖曳的 div
+参见drag.html

@@ -1,7 +1,7 @@
-##never类型是什么
+## never类型是什么
 
 https://blog.csdn.net/cuishizun/article/details/81564294
-
+```
 let x: never;
 let y: number;
 
@@ -23,6 +23,5 @@ function error(message: string): never {
 function loop(): never {
     while (true) {}
 }
-
-
+```
 https://github.com/Microsoft/TypeScript
